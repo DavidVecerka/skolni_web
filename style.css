@@ -31,6 +31,7 @@ body {
 .menu li {
     display: inline-block;
     padding: 5px;
+    text-transform: uppercase;
 }
 
 .menu li a {
@@ -39,5 +40,46 @@ body {
 }
 
 .baner {
-    background-color: red;
+    background-image: url(https://amazonkaspa.cz/wp-content/uploads/2024/11/Amazonka_SPA_Liberec.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right 35% center;
+    background-attachment: fixed;
+    position: relative;
+    height: 500px;
+    width: auto;
+}
+
+.baner h1, h2, p {
+    color: #DDD;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 75px;
+    padding-left: 20px;
+    padding-top: 170px;
+    border: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+}
+
+.baner h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.baner h2 {
+    font-weight: 700;
+    width: 400px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 0px;
+}
+
+.baner p {
+    padding-top: 0px;
 }
