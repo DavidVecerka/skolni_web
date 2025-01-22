@@ -1,15 +1,11 @@
 body {
     background-color: black;
-    background-image: url(img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: right 35% center;
     background-attachment: fixed;
-}
-
-.bg {
-    
 }
 
 #website {
@@ -27,6 +23,11 @@ body {
     padding-left: 15px;
 }
 
+#header img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .logo {
     color: white;
     text-decoration: none;
@@ -41,6 +42,7 @@ body {
     display: inline-block;
     padding: 5px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .menu li a {
@@ -59,8 +61,8 @@ body {
     text-align: left;
     margin-top: 20px;
     padding-right: 75px;
-    padding-left: 20px;
-    padding-top: 300px;
+    padding-left: 55px;
+    padding-top: 200px;
     border: 0;
     width: 500px;
     display: flex;
