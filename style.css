@@ -1,5 +1,15 @@
 body {
-    background-color: white;
+    background-color: black;
+    background-image: url(img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right 35% center;
+    background-attachment: fixed;
+}
+
+.bg {
+    
 }
 
 #website {
@@ -12,14 +22,13 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #DDD;
-    color: black;
+    color: white;
     padding-right: 15px;
     padding-left: 15px;
 }
 
 .logo {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 25px;
 }
@@ -35,17 +44,11 @@ body {
 }
 
 .menu li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .baner {
-    background-image: url(https://amazonkaspa.cz/wp-content/uploads/2024/11/Amazonka_SPA_Liberec.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: right 35% center;
-    background-attachment: fixed;
     position: relative;
     height: 500px;
     width: auto;
@@ -57,7 +60,7 @@ body {
     margin-top: 20px;
     padding-right: 75px;
     padding-left: 20px;
-    padding-top: 170px;
+    padding-top: 300px;
     border: 0;
     width: 500px;
     display: flex;
