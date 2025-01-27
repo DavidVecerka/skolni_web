@@ -1,30 +1,14 @@
-body {
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right 35% center;
-    background-attachment: fixed;
-}
-
 #website {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: Arial;
 }
 
-#header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #CCC;
-}
-
-#header img {
-    max-width: 200px;
-    max-height: 200px;
 }
 
 .logo img {
@@ -35,43 +19,4 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.baner {
-    position: relative;
-    height: 500px;
-    width: auto;
-}
-
-.baner h1, h2, p {
-    color: #DDD;
-    text-align: left;
-    margin-top: 20px;
-    padding-right: 75px;
-    padding-left: 55px;
-    padding-top: 200px;
-    border: 0;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    line-height: 1em;
-}
-
-.baner h1 {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 15px;
-}
-
-.baner h2 {
-    font-weight: 700;
-    width: 400px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-top: 0px;
-}
-
-.baner p {
-    padding-top: 0px;
 }
