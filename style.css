@@ -58,3 +58,32 @@ nav ul {
 .baner-text p {
     font-size: 24px;
 }
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.feature-head {
+    display: flex;
+    align-items: center;
+}
+
+.feature-head svg {
+    margin-right: 10px;
+}
+
+.feature-head h3 {
+    margin: 0;
+}
+
+.feature-head p {
+    font-size: 30px;
+}
