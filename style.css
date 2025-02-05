@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Liter&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary-color: #090C9B;
+    --bg-color: white;
+    --text-color: #000;
+}
+
 body {
     font-family: "Nunito";
     font-optical-sizing: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-theme {
+    --bg-color: #000;
+    --text-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto";
+    font-weight: 700;
 }
 
 #website {
@@ -32,6 +46,28 @@ nav ul {
     gap: 20px;
 }
 
+nav ul li a {
+    color: var(--primary-color);
+}
+
+.theme-switch {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M12 5q-.425 0-.712-.288T11 4V2q0-.425.288-.712T12 1t.713.288T13 2v2q0 .425-.288.713T12 5m4.95 2.05q-.275-.275-.275-.687t.275-.713l1.4-1.425q.3-.3.712-.3t.713.3q.275.275.275.7t-.275.7L18.35 7.05q-.275.275-.7.275t-.7-.275M20 13q-.425 0-.713-.288T19 12t.288-.712T20 11h2q.425 0 .713.288T23 12t-.288.713T22 13zm-8 10q-.425 0-.712-.288T11 22v-2q0-.425.288-.712T12 19t.713.288T13 20v2q0 .425-.288.713T12 23M5.65 7.05l-1.425-1.4q-.3-.3-.3-.725t.3-.7q.275-.275.7-.275t.7.275L7.05 5.65q.275.275.275.7t-.275.7q-.3.275-.7.275t-.7-.275m12.7 12.725l-1.4-1.425q-.275-.3-.275-.712t.275-.688t.688-.275t.712.275l1.425 1.4q.3.275.288.7t-.288.725q-.3.3-.725.3t-.7-.3M2 13q-.425 0-.712-.288T1 12t.288-.712T2 11h2q.425 0 .713.288T5 12t-.288.713T4 13zm2.225 6.775q-.275-.275-.275-.7t.275-.7L5.65 16.95q.275-.275.687-.275t.713.275q.3.3.3.713t-.3.712l-1.4 1.4q-.3.3-.725.3t-.7-.3M12 18q-2.5 0-4.25-1.75T6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.5em;
+    height: 1.2em;
+    display: inline-block;
+    cursor: pointer;;
+}
+
+.theme-switch.dark {
+        --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M14.5 21q-1.858 0-3.5-.71q-1.642-.711-2.86-1.93T6.21 15.5T5.5 12q0-1.864.71-3.503q.711-1.64 1.93-2.857T11 3.71Q12.642 3 14.5 3q.812 0 1.558.139q.746.138 1.442.442q-1.833 1.498-2.916 3.674Q13.5 9.43 13.5 12t1.084 4.745T17.5 20.42q-.696.304-1.442.443Q15.312 21 14.5 21'/%3E%3C/svg%3E");
+}
+
 .baner {
     width: 100%;
     height: 500px;
@@ -45,7 +81,7 @@ nav ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: url(--text-color);
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
@@ -59,9 +95,14 @@ nav ul {
     font-size: 24px;
 }
 
+.callta {
+    text-align: center;
+}
+
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 30px 10px;
 }
 
 .feature {
@@ -69,11 +110,19 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    transition: all 0.5s;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .feature-head {
     display: flex;
     align-items: center;
+    color: var(--primary-color);
 }
 
 .feature-head svg {
@@ -86,4 +135,34 @@ nav ul {
 
 .feature-head p {
     font-size: 30px;
+}
+
+.theme-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn {
+    background-color: var(--bg-color);
+	color: var(--primary-color);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.cta {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.cta h2 {
+    font-size: 28px;
+}
+
+.theme-primary .btn {
+    background-color: white;
+    color: var(--primary-color);
 }
