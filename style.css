@@ -166,3 +166,23 @@ nav ul li a {
     background-color: white;
     color: var(--primary-color);
 }
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.container-reverse {
+    flex-direction: row-reverse;
+}
+
+.flexbox-img {
+    width: 40%;
+    height: 40%;
+}
