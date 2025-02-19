@@ -47,6 +47,13 @@ nav ul {
 }
 
 nav ul li a {
+    color: var(--text-color);
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15em;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
     color: var(--primary-color);
 }
 
@@ -65,13 +72,13 @@ nav ul li a {
 }
 
 .theme-switch.dark {
-        --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M14.5 21q-1.858 0-3.5-.71q-1.642-.711-2.86-1.93T6.21 15.5T5.5 12q0-1.864.71-3.503q.711-1.64 1.93-2.857T11 3.71Q12.642 3 14.5 3q.812 0 1.558.139q.746.138 1.442.442q-1.833 1.498-2.916 3.674Q13.5 9.43 13.5 12t1.084 4.745T17.5 20.42q-.696.304-1.442.443Q15.312 21 14.5 21'/%3E%3C/svg%3E");
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M14.5 21q-1.858 0-3.5-.71q-1.642-.711-2.86-1.93T6.21 15.5T5.5 12q0-1.864.71-3.503q.711-1.64 1.93-2.857T11 3.71Q12.642 3 14.5 3q.812 0 1.558.139q.746.138 1.442.442q-1.833 1.498-2.916 3.674Q13.5 9.43 13.5 12t1.084 4.745T17.5 20.42q-.696.304-1.442.443Q15.312 21 14.5 21'/%3E%3C/svg%3E");
 }
 
 .baner {
     width: 100%;
     height: 500px;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url('img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg');
+    background-image: url('img/Flux_Dev_updatedpromptCreate_an_atmospheric_photograph_of_a_vi_1.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -81,7 +88,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: url(--text-color);
+    color: white;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
@@ -167,6 +174,10 @@ nav ul li a {
     color: var(--primary-color);
 }
 
+.services-enter-text {
+    text-align: center;
+}
+
 .container {
     margin: 0 auto;
     padding: 20px;
@@ -185,4 +196,26 @@ nav ul li a {
 .flexbox-img {
     width: 40%;
     height: 40%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding: 20px;
+    background-color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-block {
+    line-height: 1.5;
+}
+
+.footer-block a:hover {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.my-map {
+    padding-top: 10px;
 }
