@@ -308,3 +308,7 @@ nav ul li a:hover {
 .my-map {
     padding-top: 10px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
