@@ -109,6 +109,15 @@ nav ul li a:hover {
     font-size: 24px;
 }
 
+@media (max-width: 768px) {
+    .baner-text h1 {
+        font-size: 28px;
+    }
+    .baner-text p {
+        font-size: 16px;
+    }
+}
+
 .feature-cta {
     text-align: center;
 }
@@ -126,6 +135,12 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 30px 10px;
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
 }
 
 .feature {
@@ -289,6 +304,27 @@ nav ul li a:hover {
     transform: scale(1.1);
     transition: 0.1s;
     background-color:rgba(44, 63, 144, 0.8);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 400px;
+        gap: 0px;
+    }
+    .container .container-img {
+        width: 100%;
+    }
+
+    .container-reverse {
+        flex-direction: column;
+        max-width: 400px;
+        gap: 0px;
+    }
+
+    .container-reverse .container-img {
+        width: 100%;
+    }
 }
 
 .footer {
